@@ -1,0 +1,176 @@
+* {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+:host ::ng-deep .mat-tab-label {
+    height: 3rem !important;
+    min-width: 8rem !important;
+}
+
+/* Styles for the active tab label */
+:host ::ng-deep .mat-tab-label.mat-tab-label-active {
+    box-sizing: border-box;
+}
+
+::ng-deep .mat-tab-header, .mat-tab-nav-bar {
+    border-bottom: 1px solid rgba(255, 0, 0, 0) ;
+}
+
+/* Styles for the ink bar */
+:host ::ng-deep .mat-ink-bar {
+    display: none !important;
+}
+
+.title-main {
+    width: 480px;
+    margin-left: 40px;
+    position: relative;
+    top: 40%;
+   
+}
+
+.title-main h1{
+    color: #fff;
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+.tabs-container {
+   background-color: #fff;
+   width: 400px; 
+   margin-top: 30%;
+   margin: auto;
+   display: flex;
+   float: right;
+   transform: translate(-15%, 13%);
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+.box {   
+    width: 400px;
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.336);
+    
+}
+
+.box-left {
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+.box-left h2 {
+    font-weight: 300;
+    font-size: 27px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+input {
+    margin-bottom: 25px;
+    padding: 15px 15px;
+    border: none;
+    outline: none;
+    background-color: #F2F2F2;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+::placeholder {
+    color: #a79e9eb6;
+}
+
+.box-right {
+    background: linear-gradient(135deg, #f75959 0%, #f35587 100%);
+    color: rgba(255, 255, 255, 0.815);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-danger, .btn{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all .4s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btn-danger {
+    background-color: #F65866;
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+}
+.btn-danger:hover {
+    animation: fade .14s 1 forwards;
+}
+@keyframes fade {
+    0% {
+        background-color: #F65866;
+    }
+    50% {
+        background-color: #F8F9FD;
+    }
+    100% {
+        background-color: #F35588;
+    }
+    
+}
+.box-right h2 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.box-right p {
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.btn {  
+    color: rgba(255, 255, 255, 0.815);    
+    border: 1px solid rgba(255, 255, 255, 0.938);
+    padding: 10px 15px;
+    margin-top: 10px;    
+}
+.btn:hover {
+    background-color: #F8F9FD;
+    color: #000;
+}
+

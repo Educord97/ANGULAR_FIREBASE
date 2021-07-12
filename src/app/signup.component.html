@@ -1,0 +1,7 @@
+<div *ngIf="!isSignedIn">
+  <h2>Inscrever-se</h2>
+  <input type="text" #emailSignup/>
+  <input type="text" #passwordSignup/>
+  <button (click)="onSignup(emailSignup.value,passwordSignup.value)">Inscrever-se</button>
+</div>
+<hr>
